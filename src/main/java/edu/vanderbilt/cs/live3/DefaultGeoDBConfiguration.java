@@ -3,25 +3,17 @@ package edu.vanderbilt.cs.live3;
 public class DefaultGeoDBConfiguration {
 
     /**
-     * @ToDo
-     *
-     * Update to return instances of your factory
-     *
      * @return
      */
-    public GeoDBFactory getDBFactory(){
-        return null;
+    public GeoDBFactory getDBFactory() {
+        return new GeoDBFactory();
     }
 
     /**
-     * @ToDo
-     *
-     * Update to return instances of your factory
-     *
      * @return
      */
-    public GeoHashFactory getHashFactory(){
-        return null;
+    public GeoHashFactory getHashFactory() {
+        return new GeoHashFactoryImpl();
     }
 
 }
